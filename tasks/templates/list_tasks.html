@@ -29,6 +29,15 @@
             <button>Save</button>
 
         </form>
+
+
+        {% for task in tasks %}    {% comment %} ##### get data from view.py ##### {% endcomment %}
+            <div>
+                <h1>{{task.title}}</h1> 
+                <p>{{task.description}}</p>
+                <button>Delete</button>
+            </div>
+        {% endfor %}
         
     </body>
 </html>
